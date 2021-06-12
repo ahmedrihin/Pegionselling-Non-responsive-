@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --text-color: #fff;
+    --dark: #000;
+    --color: #707070;
+    --red: rgb(253, 60, 60);
+    --gray-text: rgb(175, 175, 175);
+
+}
+.container{
+    width: 1152px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../img/headerbackground.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+section{
+    padding: 5rem 0;
+}
+.nav_bar{
+    display: flex;
+}
+
+.logo a{
+    text-decoration: none;
+}
+.logo h4{
+    text-align: center;
+    color: rgb(255, 214, 125);
+    font-size: 1.2rem;
+}
+.logo img{
+    height: 4rem;
+}
+.navigation{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    align-content: center;
+    position: relative;
+}
+.navigation ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 25px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    padding: 5px 25px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    transition: 0.1s ease;
+}
+.navigation ul li a:hover{
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+.search-bar{
+    justify-content: flex-end;
+    position: relative;
+}
+.search-bar a i{
+    position: absolute;
+    top: 50%;
+    color: var(--text-color);
+}
+.header-content-align{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    position: absolute;
+    width: 1152px;
+    top: 30%;
+    
+}
+
+.header-left-content h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.header-right-content img{
+    height: 20rem;
+}
+.header-left-content p{
+    color: var(--text-color);
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+.header-left-content h4{
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+.news>h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.news .news-container-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.news .news-container-wrapper .news-card{
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    padding-bottom: 1rem;
+}
+.news .news-container-wrapper .news-card .card-image img{
+    height: 250px;
+    margin-bottom: 1rem;
+}
+.news .news-container-wrapper .news-card .card-content h2{
+    margin-bottom: 1rem;
+}
+.news .news-container-wrapper .news-card .card-content h3{
+    margin-bottom: 1rem;
+    color: var(--red);
+    font-size: 0.9rem;
+}
+.news .news-container-wrapper .news-card .card-content p{
+    color: var(--color);
+    margin-bottom: 1rem;
+}
+.news .news-container-wrapper .news-card .card-content button{
+    padding: 10px 15px;
+    background-color: var(--color);
+    border: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pegion background lorem */
+
+.pegion-background{
+    height: 30vh;
+    
+    position: relative;
+}
+#pegion{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.9)), url('../img/pegion-background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.pegion-background .pegion-background-lorem{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    direction: rtl;
+    left: 65%;
+
+}
+.pegion-background .pegion-background-lorem h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.pegion-background .pegion-background-lorem p{
+    color: var(--gray-text);
+}
+.our-pegion-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+}
+.our-pegion-wrapper .our-pegion-card .our-pegion-image img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.our-pegion-wrapper .our-pegion-card{
+    background-color: rgb(233, 233, 233);
+    padding: 3rem;
+}
+
+.our-pegion-wrapper .our-pegion-card .our-pegion-content h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.our-pegion{
+    background-color: rgb(221, 221, 221);
+    padding: 5rem;
+}
+.our-pegion h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.our-pegion button{
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background-color: var(--color);
+    border: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+
+/* Footer design */
+
+.footer-navigation-wrapper ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.footer-navigation-wrapper ul li{
+    list-style: none;
+    margin-left: 4rem;
+    padding: 2rem 0;
+}
+.footer-navigation-wrapper ul li:first-child{
+    margin-left: 0;
+}
+.footer-navigation-wrapper ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color);
+}
+.footer-content-wrapper{
+    background-color: var(--dark);
+    text-align: center;
+}
+.footer-content-wrapper p{
+    color: var(--gray-text);
+    padding: 1.5rem;
+}
